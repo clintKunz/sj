@@ -12,6 +12,16 @@ function expand() {
 menu.addEventListener('click', () => {expand()});
 xMark.addEventListener('click', () => {expand()});
 
+//subscription input
+function subscribe() {
+  console.log(event.keyCode);
+  if(event.keyCode === 13) {
+    const email = document.querySelector('.email');
+    email.classList.add('hide');
+    const inquiryMessage = document.querySelector('.inquiry-message')
+    inquiryMessage.classList.remove('hide');
+  }
+}
 
 //Services-page
 

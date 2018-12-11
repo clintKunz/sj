@@ -244,6 +244,9 @@ footer .bottom .contact {
     margin-top: 20px;
   }
 }
+footer .bottom .inquiry-message p {
+  margin: 20px 0;
+}
 footer .bottom input {
   margin: 15px 0 10px 0;
   width: 97%;
