@@ -56,7 +56,7 @@ class Carousel {
 
   selectLeft() {
     if (this.position === 0) {
-    this.position = 3;
+    this.position = 2;
     } else {
     this.position = this.position - 1;
     }
@@ -69,7 +69,7 @@ class Carousel {
   }
 
   selectRight() {
-    if (this.position === 3) {
+    if (this.position === 2) {
     this.position = 0;
     } else {
     this.position = this.position + 1;
@@ -86,5 +86,4 @@ class Carousel {
 
 let carousel = document.querySelector('.home-motto');
 carousel = new Carousel(carousel);
-
 
