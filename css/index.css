@@ -327,15 +327,6 @@ footer .copyright {
   transform: skewX(0);
   opacity: 1;
 }
-.home [data-aos="anim2"] {
-  transform: rotate(360deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-}
-.home [data-aos="anim2"].aos-animate {
-  transform: rotate(0);
-  opacity: 1;
-}
 .home .top {
   margin: 0 80px;
 }
@@ -374,6 +365,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .top .intro .intro-content .btn:hover {
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .top {

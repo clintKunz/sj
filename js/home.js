@@ -1,5 +1,6 @@
 //home-page
 
+//Navigation
 let menu = document.querySelector('.hamburger');
 let navLinks = document.querySelector('.links');
 let xMark = document.querySelector('.x-mark')
@@ -14,8 +15,24 @@ function expand() {
 menu.addEventListener('click', () => {expand()});
 xMark.addEventListener('click', () => {expand()});
 
+//Button Animations
 AOS.init({
   duration: 1200
+});
+
+//Button functionality
+const buttons = document.querySelectorAll('.btn');
+console.log(buttons);
+
+buttons[0].addEventListener('click', () => {
+  return document.location.href = "services.html"; 
+});
+
+buttons[1].addEventListener('click', () => {
+  return window.scrollTo({
+    top: 1320,
+    behavior: 'smooth'
+  })
 });
 
 //Carousel
