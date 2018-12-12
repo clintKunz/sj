@@ -96,6 +96,5 @@ submit.addEventListener('click', function(event) {
 
     formName.textContent = name.placeholder; 
 
-    console.log(formName);
 });
 
