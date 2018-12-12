@@ -961,7 +961,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-.contact-page .main .tab-output .show .contact-submitted p {
+.contact-page .main .tab-output .show .contact-submitted .form-response {
   font-size: 2rem;
 }
 .contact-page .main .tab-output .show .hide {
@@ -982,6 +982,9 @@ footer .copyright {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.contact-page .main .tab-output .show .content h3 {
+  margin: 15px 0;
+}
 .contact-page .main .tab-output .show .content li {
   font-style: italic;
   margin: 10px 0;
@@ -1001,8 +1004,6 @@ footer .copyright {
 .contact-page .main .tab-output .show .content input {
   font-size: 1rem;
   height: 40px;
-  width: 200px;
-  margin: 10px 0;
 }
 .contact-page .main .tab-output .show .content .hide {
   display: none;
@@ -1032,4 +1033,19 @@ footer .copyright {
   cursor: pointer;
   background-color: #6c94b2;
   color: #FFFFFF;
+}
+.contact-page .main .tab-output .show .content p {
+  font-size: 0.8rem;
+  color: grey;
+  margin-bottom: 15px;
+}
+.contact-page .main .tab-output .show .content textarea {
+  width: 100%;
+}
+.contact-page .main .tab-output .show .content .radio-section {
+  display: flex;
+  align-items: center;
+}
+.contact-page .main .tab-output .show .content .radio-section .radio-btn {
+  margin-right: 10px;
 }
