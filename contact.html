@@ -55,18 +55,34 @@
 			<div class="tab-output">
 				<div class="output" data-tab="contact">
 					<div class="content contact-form">
-						<h2>Our Information Is Below</h2>
-						<p>Enter your phone number and email, and we will reach out soon.</p>
-						<label for="name">Name:</label>
-						<input type="text" id="name" placeholder="Matt Fordly"><br>
-						<label for="phone">Phone Number:</label>
-						<input type="text" id="phone" placeholder="(555)-210-7845"><br>
-						<label for="email">Email:</label>
-						<input type="text" id="email" placeholder="mattfordly@sj.com">
+						<h2>Get In Touch</h2>
+
+						<h3>Name:</h3>
+						<input type="text" id="name" placeholder="Matt Fordly">
+
+						<h3>Email address:</h3>
+						<input type="text" id="email" placeholder="Enter email">
+						<p>We'll never share your email with anyone else</p>
+						
+						<h3>How many buildings do you need planned?</h3>
+						<select>
+							<option value="1">1</option>
+							<option value="2-4">2-4</option>
+							<option value="5-10">5-10</option>
+							<option value="11">11+</option>
+						</select></br>
+
+						<h3>Provide a brief overview of your project needs:</h3>
+						<textarea name="project-overview" id="" cols="50" rows="10"></textarea>
+						
+						<div class="radio-section"><input type="radio" class="radio-btn">I am a small business</div>
+						<div class="radio-section"><input type="radio" class="radio-btn">I am a residential owner</div>
+						<div class="radio-section"><input type="radio" class="radio-btn">I am a corporation</div>
+
 						<div class="btn submit">Submit</div>
 					</div>
 					<div class="content contact-submitted hide" id="app">
-						<p>It's good to meet you {{ name }}! We will reach out to you soon. Check out our <a href="https://www.google.com/search?safe=active&ei=Xbl9W6CeAcPK0PEP9uyB2Ag&q=s%26j+architecture+reviews&oq=s%26j+architecture+reviews&gs_l=psy-ab.3...12380.13345.0.13432.8.8.0.0.0.0.160.611.5j1.6.0....0...1c.1.64.psy-ab..2.5.530...0i22i30k1j33i160k1j33i21k1.0.wzMGpozV0b0">reviews on Google.</a> We can message on there as well!</p>
+						<p class="form-response">It's good to meet you <span class="form-name"></span>! We will reach out to you soon. Check out our <a href="https://www.google.com/search?safe=active&ei=Xbl9W6CeAcPK0PEP9uyB2Ag&q=s%26j+architecture+reviews&oq=s%26j+architecture+reviews&gs_l=psy-ab.3...12380.13345.0.13432.8.8.0.0.0.0.160.611.5j1.6.0....0...1c.1.64.psy-ab..2.5.530...0i22i30k1j33i160k1j33i21k1.0.wzMGpozV0b0">reviews on Google.</a> We can message on there as well!</p>
 					</div>
 					<img src="img/Contact_us.jpg" alt="contact" class="output-img">
 					<img src="img/Contact_us.jpg" alt="plans" class="mobile">
@@ -74,7 +90,7 @@
 				<div class="output" data-tab="faq">
 					<div class="content">
 						<h2>FAQs</h2>
-						<p>Questions are great. Here are some of our favorites. If you have questions not on this list, reach out to Josh, he is a smart dude.</p>
+						<p>Questions are great. Here are some of our favorites.</p>
 						<br>
 						<ul>
 							<li class="faqs" data-tab="time">What's the best way to manage your time?</li>
@@ -84,7 +100,7 @@
 							<li class="faqs" data-tab="lunch">What time is lunch?</li>
 							<div class="answer hide" data-tab="lunch">Noon</div>
 							<li class="faqs" data-tab="life">What is the meaning of life?</li>
-							<div class="answer hide" data-tab="life">Great question, ask Josh!</div>
+							<div class="answer hide" data-tab="life">Great question, read the Book of Mormon!</div>
 						</ul>
 					</div>
 					<img src="" alt="" class="output-img">
