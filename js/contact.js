@@ -87,17 +87,15 @@ const submit = document.querySelector('.submit');
 const content = document.querySelector('.contact-form');
 const contactSubmitted = document.querySelector('.contact-submitted');
 
-submit.addEventListener('click', function() {
+submit.addEventListener('click', function(event) {
     content.classList.add('hide');
     contactSubmitted.classList.remove('hide');
 
     const name = document.getElementById('name');
+    const formName = document.querySelector('.form-name');
 
-    const app = new Vue({
-        el: '#app',
-        data: {
-            name: 'Matt'
-        }
-    })
+    formName.textContent = name.placeholder; 
+
+    console.log(formName);
 });
 
